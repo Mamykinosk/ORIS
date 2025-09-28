@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Interface</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #343541;
+            color: #ececf1;
+            display: flex; 
+            height: 100vh; 
+        }
+
+        .chat-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar {
+            display: none;
+            box-sizing: border-box;
+        }
+
+        .content-area {
+            flex-grow: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .main-header {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .get-plus-btn {
+            background-color: #4a4a61;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .content-area h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .input-bar {
+            width: 100%;
+            max-width: 650px;
+            background-color: #40414f;
+            border-radius: 12px;
+            border: 1px solid #565869;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .input-bar input {
+            flex-grow: 1;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            outline: none; 
+        }
+
+        .input-bar .icon {
+            font-size: 20px;
+            margin: 0 8px; 
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        @media (min-width: 768px) {
+            .sidebar {
+                display: flex; 
+                flex-direction: column;
+                width: 260px; 
+                background-color: #202123;
+                padding: 10px;
+                justify-content: space-between;
+            }
+
+            .sidebar-top, .sidebar-bottom {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sidebar-item {
+                display: flex;
+                align-items: center;
+                padding: 12px 10px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            .sidebar-item:hover {
+                background-color: #2a2b32;
+            }
+
+            .sidebar-item .icon {
+                margin-right: 12px;
+                font-size: 18px;
+            }
+            
+            .content-area h1 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="sidebar-item">
+                    <span class="icon">🤖</span>
+                    <span>ChatGPT</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon">✏️</span>
+                    <span>New Chat</span>
+                </div>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-item">
+                    <span class="icon">✨</span>
+                    <span>Upgrade</span>
+                </div>
+                <div class="sidebar-item">
+                    <span class="icon">👤</span>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-area">
+            
+            <header class="main-header">
+                <div></div>
+                <button class="get-plus-btn">✦ Get Plus</button>
+            </header>
+
+            <h1>What can I help with?</h1>
+
+            <div class="input-bar">
+                <span class="icon">+</span>
+                <input type="text" placeholder="Ask anything">
+                <span class="icon">🎤</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
