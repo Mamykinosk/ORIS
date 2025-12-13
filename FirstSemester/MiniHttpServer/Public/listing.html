@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры в Турцию 2025</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Inter:400,700');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f2f2f2;
+            color: #1d1d1d; 
+        }
+
+        a {
+            text-decoration: none;
+            color: #4470a6;
+        }
+
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto; 
+            background-color: #ffffff; 
+        }
+
+        .page-header {
+            padding: 32px 36px 20px 36px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .header-top .schedule {
+            font-size: 13px;
+            color: #a4a4a4;
+        }
+
+        .header-top .phone {
+            font-size: 26px;
+            color: #1d1d1d;
+        }
+
+        .header-top-nav a {
+            font-size: 14px;
+            text-decoration: underline;
+            margin-left: 12px;
+        }
+
+        .header-location-link {
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+        .search-form {
+            display: flex;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            display: flex;
+            flex-grow: 1;
+            border: 1px solid #bfbfbf;
+            border-right: none;
+        }
+
+        .search-field {
+            border: none;
+            outline: none;
+            height: 43px;
+            padding: 0 25px 0 10px;
+            font-size: 14px;
+            width: 100%;
+            color: #757575;
+        }
+
+        .search-field.has-value {
+            color: #252525;
+        }
+
+        .dropdown-arrow {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #757575;
+            pointer-events: none;
+        }
+
+        .search-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 43px;
+            background-color: #77b74c;
+            color: white;
+            border: 1px solid #77b74c;
+            padding: 0 15px;
+            font-size: 14px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .search-button img {
+            margin-right: 8px;
+        }
+
+        .page-content-wrapper {
+            display: flex;
+            padding: 40px 75px;
+            gap: 64px; 
+        }
+
+        .filters-sidebar {
+            width: 256px;
+            flex-shrink: 0;
+        }
+
+        .filter-group {
+            padding-bottom: 20px;
+            margin-bottom: 5px;
+            padding-top: 5px;
+            border-top: 2px solid #f0f2f3;
+        }
+
+        .filter-group:first-child {
+            padding-top: 0;
+            border-top: none;
+        }
+
+        .filter-group-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0e2540;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px; 
+        }
+
+        .filter-arrow {
+            font-weight: normal;
+            color: #0e2540;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .checkbox-item label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        .custom-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #2ec4c1;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .custom-checkbox.checked {
+            background-color: #2ec4c1;
+        }
+
+        .custom-checkbox img {
+            width: 12px;
+            height: 10px;
+            display: none; 
+        }
+
+        .custom-checkbox.checked img {
+            display: block;
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #a4a4a4;
+            margin-bottom: 20px;
+        }
+        .breadcrumb a {
+            text-decoration: underline;
+        }
+
+        .page-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0e2540;
+            margin-bottom: 10px;
+        }
+
+        .page-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .resorts-section {
+            margin-bottom: 32px;
+        }
+
+        .resorts-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .resort-card {
+            text-align: center;
+        }
+
+        .resort-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .resort-card span {
+            font-size: 14px;
+        }
+
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0e2540;
+        }
+
+        .sort-options {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sort-options span {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .sort-button {
+            border: 1px solid #1c75b1;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background: none;
+        }
+
+        .sort-button.active {
+            background-color: #1c75b1;
+            color: white;
+        }
+
+        .sort-button.inactive {
+            background-color: transparent;
+            color: #161616;
+        }
+
+        .section-header .tour-count {
+            font-size: 14px;
+            color: #a4a4a4;
+        }
+
+        .hotel-link {
+            text-decoration: underline;
+            color: #4470A6;
+        }
+
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .tour-card {
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .tour-card-image {
+            position: relative;
+        }
+
+        .tour-card-image img {
+            width: 100%;
+            height: 163px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tour-card-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #f5851f;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .tour-card-badge.green {
+            background-color: #20bb56;
+        }
+
+        .tour-card-content {
+            padding: 16px;
+        }
+
+        .tour-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .tour-card-content h3 {
+            font-size: 16px;
+            font-weight: lighter;
+            color: #0e2540;
+            margin: 8px 0;
+            min-height: 40px;
+        }
+
+        .tour-details p {
+            font-size: 14px;
+            color: #252525;
+            margin-bottom: 4px;
+        }
+
+        .tour-pricing {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 16px;
+        }
+
+
+        .tour-pricing .new-price {
+            font-size: 15px;
+            font-weight: lighter;
+            color: #252525;
+        }
+
+        .tour-pricing .details-button {
+            background-color: #5C6774;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .page-footer {
+            background-color: #5c6774;
+            padding: 48px 64px;
+            color: #c7c8c9;
+        }
+
+        .footer-content {
+            max-width: 1090px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 32px;
+            padding-bottom: 48px;
+        }
+
+        .footer-contact .schedule {
+            font-size: 13px;
+            color: #c3c5c8;
+            margin-bottom: 12px;
+        }
+
+        .footer-contact .phone {
+            font-size: 24px;
+            color: #cfd0d2;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        .footer-contact .call-button {
+            background-color: #7dc150;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 16px;
+        }
+
+        .footer-contact .sitemap-link {
+            color: #b1b9c1;
+            font-size: 15px;
+            text-decoration: underline;
+        }
+
+        .footer-links-column h3 {
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .footer-links-column ul {
+            list-style: none;
+        }
+
+        .footer-links-column li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links-column a {
+            font-size: 12px;
+            color: #c7c8c9;
+        }
+
+        .footer-bottom {
+            border-top: 1px dashed #b1b9c1;
+            padding-top: 24px;
+            font-size: 13px;
+            color: #b1b9c1;
+        }
+
+        .footer-bottom a {
+            text-decoration: underline;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 16px;
+        }
+
+        .footer-bottom .registry-info a {
+            color: #4470a6;
+        }
+
+        .payment-logos {
+            margin-top: 15px;
+        }
+
+        .payment-logos img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+
+    <header class="page-header">
+        <div class="header-top">
+            <div>
+                <p class="schedule">Ежедневно с 09:00 - 21:00</p>
+                <p class="phone">+7 (554) 871-40-48</p>
+                <a href="#" class="header-location-link">Где купить?</a>
+            </div>
+
+            <nav class="header-top-nav">
+                <a href="#">О компании</a>
+
+                $if(IsLoggedIn)
+                <span style="margin-right: 10px;">${UserName}</span>
+
+                $if(IsAdmin)
+                <a href="/admin/dashboard" style="color: red;">Админка</a>
+                $endif
+
+                <a href="/auth/logout">Выйти</a>
+                $else
+                <a href="/auth/login">Войти</a>
+                $endif
+            </nav>
+        </div>
+        <div class="search-form">
+            <div class="search-input-wrapper" style="flex-basis: 25%;">
+                <input type="text" placeholder="Страна, курорт, отель" class="search-field">
+                <span class="dropdown-arrow"></span>
+            </div>
+            <div class="search-input-wrapper" style="flex-basis: 18%;">
+                <input type="text" value="Москва" class="search-field has-value">
+                <span class="dropdown-arrow"></span>
+            </div>
+            <div class="search-input-wrapper" style="flex-basis: 22%;">
+                <input type="text" value="02.11.2025 - 09.11.2025" class="search-field has-value">
+                <span class="dropdown-arrow"></span>
+            </div>
+            <div class="search-input-wrapper" style="flex-basis: 15%;">
+                <input type="text" value="на 6 - 9 ночей" class="search-field has-value">
+                <span class="dropdown-arrow"></span>
+            </div>
+            <div class="search-input-wrapper" style="flex-basis: 12%; border-right: 1px solid #bfbfbf;">
+                <input type="text" value="2 взрослых" class="search-field has-value">
+                <span class="dropdown-arrow"></span>
+            </div>
+            <button class="search-button">
+                Найти
+            </button>
+        </div>
+    </header>
+
+    <div class="page-content-wrapper">
+
+        <form hx-post="/tours/filter"
+              hx-trigger="change"
+              hx-target="#tours-container"
+              hx-swap="innerHTML">
+
+            <aside class="filters-sidebar">
+                <div class="filter-group">
+                    <h3 class="filter-group-title">Месяц <span class="filter-arrow">&gt;</span></h3>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="10" id="m-10"><label for="m-10">Октябрь</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="11" id="m-11"><label for="m-11">Ноябрь</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="12" id="m-12"><label for="m-12">Декабрь</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="1" id="m-1"><label for="m-1">Январь</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="2" id="m-2"><label for="m-2">Февраль</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="3" id="m-3"><label for="m-3">Март</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="4" id="m-4"><label for="m-4">Апрель</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="5" id="m-5"><label for="m-5">Май</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="6" id="m-6"><label for="m-6">Июнь</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="7" id="m-7"><label for="m-7">Июль</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="8" id="m-8"><label for="m-8">Август</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="9" id="m-9"><label for="m-9">Сентябрь</label></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-group-title">Сезон <span class="filter-arrow">&gt;</span></h3>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="winter" id="s-w"><label for="s-w">Зима</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="spring" id="s-sp"><label for="s-sp">Весна</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="summer" id="s-su"><label for="s-su">Лето</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="autumn" id="s-au"><label for="s-au">Осень</label></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-group-title">Тип отдыха <span class="filter-arrow">&gt;</span></h3>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="types" value="beach" id="t-beach"><label for="t-beach">Пляжные</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="types" value="hot" id="t-hot"><label for="t-hot">Горящие</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="types" value="weekend" id="t-week"><label for="t-week">Туры выходного дня</label></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-group-title">Дней <span class="filter-arrow">&gt;</span></h3>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="days" value="3" id="d-3"><label for="d-3">3 дня</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="days" value="7" id="d-7"><label for="d-7">7 дней</label></div>
+                    <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="days" value="10" id="d-10"><label for="d-10">10 дней</label></div>
+                </div>
+            </aside>
+        </form>    
+
+        <main class="main-content">
+            <div class="breadcrumb">
+                <a href="#">Главная</a> / Туры в Турцию
+            </div>
+
+            <h1 class="page-title">Туры в Турцию 2025</h1>
+
+            <section class="tours-section">
+                <div class="sort-options">
+                    <span>Сортировать по:</span>
+                    <button class="sort-button active">Цене</button>
+                    <button class="sort-button inactive">Дате</button>
+                </div>
+
+                <div class="tours-grid" id="tours-container">
+                    $foreach(var tour in Tours)
+                    <div class="tour-card">
+                        <div class="tour-card-image">
+                            <img src="/${tour.Image}" alt="${tour.Name}">
+
+                            $if(tour.IsEarlyBooking)
+                            <div class="tour-card-badge">Раннее бронирование</div>
+                            $endif
+
+                            $if(tour.IsDiscount)
+                            <div class="tour-card-badge green">Скидка на проживание</div>
+                            $endif
+                        </div>
+                        <div class="tour-card-content">
+                            <div class="tour-location">
+                                <img src="/turkey.png" alt="Turkey Flag" width="20" height="15">
+                                <span>${tour.Location}</span>
+                            </div>
+                            <a class="hotel-link" href="#"> ${tour.Name}</a>
+                            <div class="tour-details">
+                                <p>Заезд ${tour.Date}, ${tour.Duration}</p>
+                                <p>${tour.MealPlan}</p>
+                            </div>
+                            <div class="tour-pricing">
+                                <div>
+                                    <p class="new-price">${tour.Price} ₽</p>
+                                </div>
+                                <a href="/tours/detail?id=${tour.Id}" class="details-button" style="text-decoration: none; display: inline-block; text-align: center;">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    $endfor
+                </div>
+                
+            </section>
+        </main>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-contact">
+                    <p class="schedule">Ежедневно с 09:00 - 21:00</p>
+                    <p class="phone">+7 (554) 871-40-48</p>
+                    <button class="call-button">Заказать звонок</button>
+                    <a href="#" class="sitemap-link">Карта сайта</a>
+                </div>
+                <div class="footer-links-column">
+                    <h3>ТИПЫ ОТДЫХА</h3>
+                    <ul>
+                        <li><a href="#">Туры с детьми</a></li>
+                        <li><a href="#">Раннее бронирование</a></li>
+                        <li><a href="#">Горящие туры</a></li>
+                        <li><a href="#">Пляжный отдых</a></li>
+                        <li><a href="#">Туры выходного дня</a></li>
+                        <li><a href="#">Горнолыжные туры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>ТУРЫ В СТРАНЫ</h3>
+                    <ul>
+                        <li><a href="#">Турция</a></li>
+                        <li><a href="#">Египет</a></li>
+                        <li><a href="#">ОАЭ</a></li>
+                        <li><a href="#">Доминикана</a></li>
+                        <li><a href="#">Россия</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h3>ТУРБЛОГ</h3>
+                    <ul>
+                        <li><a href="#">Кипр</a></li>
+                        <li><a href="#">Куба</a></li>
+                        <li><a href="#">Мальдивы</a></li>
+                        <li><a href="#">Мексика</a></li>
+                        <li><a href="#">Венесуэла</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="#">Политика конфиденциальности</a></p>
+                <p class="registry-info">Реестровый номер: <a href="#">РТА 0038090</a> в Едином реестре турагентов. Право на <a href="#">использование товарного знака</a>.</p>
+                <div class="payment-logos">
+                    <img src="/payments/visa.svg" alt="Visa" width="40" height="26">
+                    <img src="/payments/mc.svg" alt="Mastercard" width="40" height="26">
+                    <img src="/payments/mir.svg" alt="Mir" width="40" height="26">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="/js/filters.js"></script>
+
+</body>
+</html>

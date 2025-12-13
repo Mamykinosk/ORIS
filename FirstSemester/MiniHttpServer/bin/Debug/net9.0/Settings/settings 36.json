@@ -1,0 +1,11 @@
+{
+  "Domain": "localhost",
+  "Port": 1234,
+
+  "SmtpHost": "smtp.gmail.com",
+  "SmtpPort": 587,
+  "SmtpEnableSsl": true,
+  "SmtpUsername": "mamykinosk@gmail.com",
+  "SmtpPassword": "dmvlccyrsexwoeju",
+  "EmailFrom": "mamykinosk@gmail.com"
+}

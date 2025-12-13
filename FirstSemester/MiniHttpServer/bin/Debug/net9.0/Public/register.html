@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <!-- Используем те же стили, что и для логина/админки, если они у вас есть -->
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .auth-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { text-align: center; color: #333; margin-bottom: 30px; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: #666; font-weight: 500; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
+        input:focus { border-color: #007fad; outline: none; }
+
+        button { width: 100%; padding: 12px; background: #007fad; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.3s; margin-top: 10px; }
+        button:hover { background: #006080; }
+
+        .error-msg { background: #ffebee; color: #c62828; padding: 10px; border-radius: 6px; margin-bottom: 20px; font-size: 14px; text-align: center; }
+
+        .links { text-align: center; margin-top: 20px; font-size: 14px; }
+        .links a { color: #007fad; text-decoration: none; }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="auth-box">
+    <h2>Регистрация</h2>
+
+    <!-- Блок ошибки -->
+    $if(Error)
+    <div class="error-msg">
+        ${Error}
+    </div>
+    $endif
+
+    <form method="POST" action="/auth/register">
+        <div class="form-group">
+            <label>Имя</label>
+            <input type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Пароль</label>
+            <input type="password" name="password" placeholder="Придумайте пароль" required>
+        </div>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div class="links">
+        Уже есть аккаунт? <a href="/auth/login">Войти</a>
+        <br><br>
+        <a href="/tours/list">← На главную</a>
+    </div>
+</div>
+
+</body>
+</html>

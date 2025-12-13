@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование тура</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>$if(Id) Редактирование $else Создание $endif тура</h2>
+
+    <!-- Блок вывода ошибки -->
+    $if(Error)
+    <div class="alert-error">
+        ${Error}
+    </div>
+    $endif
+
+    <form method="POST" action="/admin/save">
+        <input type="hidden" name="Id" value="${Id}">
+
+        <label>Название отеля</label>
+        <input type="text" name="Name" value="${Name}" placeholder="Например: Deniz Houses Hotel" required>
+
+        <label>Локация (Страна, Город)</label>
+        <input type="text" name="Location" value="${Location}" placeholder="Турция, Стамбул" required>
+
+        <label>Дата заезда (ДД.ММ.ГГГГ)</label>
+        <input type="text" name="Date" value="${Date}" placeholder="19.12.2025" required>
+        <small>Строго в формате 19.12.2025 для работы фильтров!</small>
+
+        <label>Длительность</label>
+        <input type="text" name="Duration" value="${Duration}" placeholder="10 ночей" required>
+
+        <label>Питание</label>
+        <input type="text" name="MealPlan" value="${MealPlan}" placeholder="Завтрак">
+
+        <label>Тип тура (для фильтров)</label>
+        <input type="text" name="Type" value="${Type}" placeholder="beach, hot, weekend">
+        <small>Варианты: beach (пляж), hot (горящий), weekend (выходные)</small>
+
+        <label>Цена</label>
+        <input type="text" name="Price" value="${Price}" placeholder="55 035 ₽" required>
+
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" name="IsEarlyBooking" id="early" $if(IsEarlyBooking) checked $endif>
+                <label for="early">Раннее бронирование</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" name="IsDiscount" id="disc" $if(IsDiscount) checked $endif>
+                <label for="disc">Скидка</label>
+            </div>
+        </div>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <a href="/admin/dashboard" class="back-link">← Вернуться к списку</a>
+</div>
+
+</body>
+</html>
