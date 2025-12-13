@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Туры в Турцию 2025</title>
 
-    <!-- This is where all the styling for the page is written -->
     <style>
-        /* Import fonts from Google Fonts */
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Inter:400,700');
 
-        /* Basic Reset: This removes default browser margins and paddings for consistency. */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Styles for the whole page */
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f2f2f2; /* Light grey background for the page */
-            color: #1d1d1d; /* Default text color */
+            background-color: #f2f2f2;
+            color: #1d1d1d; 
         }
 
         a {
@@ -29,14 +25,12 @@
             color: #4470a6;
         }
 
-        /* A container to center the main content on the page */
         .page-container {
-            max-width: 1200px; /* A bit wider to accommodate the sidebar */
-            margin: 0 auto; /* Centers the container horizontally */
-            background-color: #ffffff; /* White background for the content area */
+            max-width: 1200px;
+            margin: 0 auto; 
+            background-color: #ffffff; 
         }
 
-        /* --- HEADER STYLES --- */
         .page-header {
             padding: 32px 36px 20px 36px;
         }
@@ -69,7 +63,6 @@
             text-decoration: underline;
         }
 
-        /* --- SEARCH FORM STYLES --- */
         .search-form {
             display: flex;
             width: 100%;
@@ -79,7 +72,7 @@
         .search-input-wrapper {
             position: relative;
             display: flex;
-            flex-grow: 1; /* Allow fields to grow */
+            flex-grow: 1;
             border: 1px solid #bfbfbf;
             border-right: none;
         }
@@ -128,17 +121,15 @@
             margin-right: 8px;
         }
 
-        /* --- MAIN LAYOUT --- */
         .page-content-wrapper {
             display: flex;
             padding: 40px 75px;
-            gap: 64px; /* Space between sidebar and main content */
+            gap: 64px; 
         }
 
-        /* --- SIDEBAR FILTERS --- */
         .filters-sidebar {
             width: 256px;
-            flex-shrink: 0; /* Prevents sidebar from shrinking */
+            flex-shrink: 0;
         }
 
         .filter-group {
@@ -160,7 +151,7 @@
             margin-bottom: 24px;
             display: flex;
             align-items: center;
-            gap: 8px; /* Space between title and arrow */
+            gap: 8px; 
         }
 
         .filter-arrow {
@@ -181,7 +172,6 @@
         }
 
 
-        /* Custom Checkbox Style */
         .custom-checkbox {
             width: 18px;
             height: 18px;
@@ -200,19 +190,17 @@
         .custom-checkbox img {
             width: 12px;
             height: 10px;
-            display: none; /* Icon is hidden by default */
+            display: none; 
         }
 
         .custom-checkbox.checked img {
-            display: block; /* Icon is visible when checkbox is checked */
+            display: block;
         }
 
-        /* --- MAIN CONTENT --- */
         .main-content {
-            flex-grow: 1; /* Takes up the remaining space */
+            flex-grow: 1;
         }
 
-        /* BREADCRUMBS */
         .breadcrumb {
             font-size: 14px;
             color: #a4a4a4;
@@ -235,14 +223,13 @@
             margin-bottom: 20px;
         }
 
-        /* --- RESORTS SECTION --- */
         .resorts-section {
             margin-bottom: 32px;
         }
 
         .resorts-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columns */
+            grid-template-columns: repeat(4, 1fr);
             gap: 16px;
         }
 
@@ -262,7 +249,6 @@
             font-size: 14px;
         }
 
-        /* --- TOURS SECTION --- */
 
         .section-header {
             display: flex;
@@ -280,7 +266,7 @@
         .sort-options {
             display: flex;
             align-items: center;
-            gap: 8px; /* Space between sorting buttons */
+            gap: 8px;
             margin-bottom: 20px;
         }
 
@@ -320,7 +306,7 @@
 
         .tours-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-columns: repeat(3, 1fr);
             gap: 24px;
         }
 
@@ -345,14 +331,13 @@
             position: absolute;
             top: 8px;
             left: 8px;
-            background-color: #f5851f; /* Orange badge color */
+            background-color: #f5851f;
             color: white;
             padding: 2px 8px;
             border-radius: 10px;
             font-size: 12px;
         }
 
-        /* Different color for the green badge */
         .tour-card-badge.green {
             background-color: #20bb56;
         }
@@ -374,7 +359,7 @@
             font-weight: lighter;
             color: #0e2540;
             margin: 8px 0;
-            min-height: 40px; /* To align cards */
+            min-height: 40px;
         }
 
         .tour-details p {
@@ -407,7 +392,6 @@
             cursor: pointer;
         }
 
-        /* --- FOOTER STYLES --- */
         .page-footer {
             background-color: #5c6774;
             padding: 48px 64px;
@@ -421,7 +405,7 @@
 
         .footer-top {
             display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr; /* 4 columns with different sizes */
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
             gap: 32px;
             padding-bottom: 48px;
         }
@@ -507,7 +491,6 @@
 
 <div class="page-container">
 
-    <!-- Header and Search Section -->
     <header class="page-header">
         <div class="header-top">
             <div>
@@ -519,9 +502,7 @@
             <nav class="header-top-nav">
                 <a href="#">О компании</a>
 
-                <!-- Если пользователь НЕ вошел -->
                 $if(IsLoggedIn)
-                <!-- Если пользователь вошел -->
                 <span style="margin-right: 10px;">${UserName}</span>
 
                 $if(IsAdmin)
@@ -561,7 +542,6 @@
         </div>
     </header>
 
-    <!-- Main Content (Sidebar + Listings) -->
     <div class="page-content-wrapper">
 
         <form hx-post="/tours/filter"
@@ -569,9 +549,7 @@
               hx-target="#tours-container"
               hx-swap="innerHTML">
 
-        <!-- Filters Sidebar -->
             <aside class="filters-sidebar">
-                <!-- Фильтр МЕСЯЦЕВ -->
                 <div class="filter-group">
                     <h3 class="filter-group-title">Месяц <span class="filter-arrow">&gt;</span></h3>
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="10" id="m-10"><label for="m-10">Октябрь</label></div>
@@ -588,7 +566,6 @@
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="months" value="9" id="m-9"><label for="m-9">Сентябрь</label></div>
                 </div>
 
-                <!-- Фильтр СЕЗОНОВ -->
                 <div class="filter-group">
                     <h3 class="filter-group-title">Сезон <span class="filter-arrow">&gt;</span></h3>
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="winter" id="s-w"><label for="s-w">Зима</label></div>
@@ -597,7 +574,6 @@
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="seasons" value="autumn" id="s-au"><label for="s-au">Осень</label></div>
                 </div>
 
-                <!-- Фильтр ТИП ОТДЫХА -->
                 <div class="filter-group">
                     <h3 class="filter-group-title">Тип отдыха <span class="filter-arrow">&gt;</span></h3>
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="types" value="beach" id="t-beach"><label for="t-beach">Пляжные</label></div>
@@ -605,7 +581,6 @@
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="types" value="weekend" id="t-week"><label for="t-week">Туры выходного дня</label></div>
                 </div>
 
-                <!-- Фильтр ДНЕЙ -->
                 <div class="filter-group">
                     <h3 class="filter-group-title">Дней <span class="filter-arrow">&gt;</span></h3>
                     <div class="checkbox-item"><input type="checkbox" class="filter-checkbox" data-category="days" value="3" id="d-3"><label for="d-3">3 дня</label></div>
@@ -615,7 +590,6 @@
             </aside>
         </form>    
 
-        <!-- Main Content Area -->
         <main class="main-content">
             <div class="breadcrumb">
                 <a href="#">Главная</a> / Туры в Турцию
@@ -631,18 +605,15 @@
                 </div>
 
                 <div class="tours-grid" id="tours-container">
-                    <!-- Начало цикла foreach -->
                     $foreach(var tour in Tours)
                     <div class="tour-card">
                         <div class="tour-card-image">
                             <img src="/${tour.Image}" alt="${tour.Name}">
 
-                            <!-- Условие для бейджика раннего бронирования -->
                             $if(tour.IsEarlyBooking)
                             <div class="tour-card-badge">Раннее бронирование</div>
                             $endif
 
-                            <!-- Условие для скидки -->
                             $if(tour.IsDiscount)
                             <div class="tour-card-badge green">Скидка на проживание</div>
                             $endif
@@ -666,14 +637,12 @@
                         </div>
                     </div>
                     $endfor
-                    <!-- Конец цикла -->
                 </div>
                 
             </section>
         </main>
     </div>
 
-    <!-- Footer -->
     <footer class="page-footer">
         <div class="footer-content">
             <div class="footer-top">

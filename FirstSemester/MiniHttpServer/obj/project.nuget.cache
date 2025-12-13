@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tMqpkeajLn8=",
+  "dgSpecHash": "M0OKL511KRg=",
   "success": true,
-  "projectFilePath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/MiniHttpServer/MiniHttpServer.csproj",
+  "projectFilePath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/MiniHttpServer.csproj",
   "expectedPackageFiles": [
     "/Users/ostapmamykin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0-rc.1.25451.107/microsoft.extensions.dependencyinjection.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",
     "/Users/ostapmamykin/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0-rc.1.25451.107/microsoft.extensions.logging.abstractions.10.0.0-rc.1.25451.107.nupkg.sha512",

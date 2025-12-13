@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Регистрация</title>
-    <!-- Используем те же стили, что и для логина/админки, если они у вас есть -->
     <style>
         body { font-family: 'Segoe UI', sans-serif; background: #f2f2f2; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .auth-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
@@ -28,7 +27,6 @@
 <div class="auth-box">
     <h2>Регистрация</h2>
 
-    <!-- Блок ошибки -->
     $if(Error)
     <div class="error-msg">
         ${Error}
