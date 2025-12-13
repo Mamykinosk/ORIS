@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/MiniHttpServer.csproj": {}
+    "/Users/ostapmamykin/Desktop/Mini-HttpServer/FirstSemester/MiniHttpServer/MiniHttpServer.csproj": {}
   },
   "projects": {
-    "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/MiniHttpServer.csproj": {
+    "/Users/ostapmamykin/Desktop/Mini-HttpServer/FirstSemester/MiniHttpServer/MiniHttpServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/MiniHttpServer.csproj",
+        "projectUniqueName": "/Users/ostapmamykin/Desktop/Mini-HttpServer/FirstSemester/MiniHttpServer/MiniHttpServer.csproj",
         "projectName": "MiniHttpServer",
-        "projectPath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/MiniHttpServer.csproj",
+        "projectPath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/FirstSemester/MiniHttpServer/MiniHttpServer.csproj",
         "packagesPath": "/Users/ostapmamykin/.nuget/packages/",
-        "outputPath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/ORIS/FirstSemester/MiniHttpServer/obj/",
+        "outputPath": "/Users/ostapmamykin/Desktop/Mini-HttpServer/FirstSemester/MiniHttpServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ostapmamykin/.nuget/NuGet/NuGet.Config"
