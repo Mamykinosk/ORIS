@@ -1,0 +1,8 @@
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/actool/_PartialAppManifest.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/actool/_BundleResourceWithLogicalName.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/actool/_ProcessedImageAssetsPath.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/coremlc/_PartialAppManifest.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/coremlc/_BundleResourceWithLogicalName.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/coremlc/_ProcessedCoreMLModelsPath.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/_ProcessedBundleResourcesPath.items
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net8.0-maccatalyst/_ProcessedContentPath.items

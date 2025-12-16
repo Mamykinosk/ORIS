@@ -1,0 +1,11 @@
+/Users/ostapmamykin/Desktop/gad/gad.Shared/bin/Debug/net9.0/gad.Shared.deps.json
+/Users/ostapmamykin/Desktop/gad/gad.Shared/bin/Debug/net9.0/gad.Shared.dll
+/Users/ostapmamykin/Desktop/gad/gad.Shared/bin/Debug/net9.0/gad.Shared.pdb
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.AssemblyInfoInputs.cache
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.AssemblyInfo.cs
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.csproj.CoreCompileInputs.cache
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.dll
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/refint/gad.Shared.dll
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/gad.Shared.pdb
+/Users/ostapmamykin/Desktop/gad/gad.Shared/obj/Debug/net9.0/ref/gad.Shared.dll
