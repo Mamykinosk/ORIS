@@ -41,7 +41,6 @@ namespace SimpleAuthRightSide
                     
                     <div style='display: flex; justify-content: space-between; align-items: flex-start;'>
                         
-                        <!-- LEFT SIDE: FORMS -->
                         <div style='width: 60%; border: 1px solid #ccc; padding: 20px;'>
                             <h3>Login Form</h3>
                             <form action='/Login' method='POST'>
@@ -62,7 +61,6 @@ namespace SimpleAuthRightSide
                             </form>
                         </div>
 
-                        <!-- RIGHT SIDE: MESSAGE -->
                         <div style='width: 35%; text-align: right; color: green; font-size: 30px; font-weight: bold; padding-top: 50px;'>
                             {rightSideMessage}
                         </div>

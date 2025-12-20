@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ostapmamykin/Desktop/orisHw/ORIS/FirstKr_library/result/result.csproj": {}
+    "/Users/ostapmamykin/Desktop/last/ORIS/FirstKr_library/result/result.csproj": {}
   },
   "projects": {
-    "/Users/ostapmamykin/Desktop/orisHw/ORIS/FirstKr_library/result/result.csproj": {
+    "/Users/ostapmamykin/Desktop/last/ORIS/FirstKr_library/result/result.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ostapmamykin/Desktop/orisHw/ORIS/FirstKr_library/result/result.csproj",
+        "projectUniqueName": "/Users/ostapmamykin/Desktop/last/ORIS/FirstKr_library/result/result.csproj",
         "projectName": "result",
-        "projectPath": "/Users/ostapmamykin/Desktop/orisHw/ORIS/FirstKr_library/result/result.csproj",
+        "projectPath": "/Users/ostapmamykin/Desktop/last/ORIS/FirstKr_library/result/result.csproj",
         "packagesPath": "/Users/ostapmamykin/.nuget/packages/",
-        "outputPath": "/Users/ostapmamykin/Desktop/orisHw/ORIS/FirstKr_library/result/obj/",
+        "outputPath": "/Users/ostapmamykin/Desktop/last/ORIS/FirstKr_library/result/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ostapmamykin/.nuget/NuGet/NuGet.Config"
